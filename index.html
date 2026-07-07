@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do List App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="todo-app card">
+        <div class="card-header">
+          <img src="assets/icon (1).png" alt="To-do list icon" id="icon" />
+          <h1>To-do List</h1>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Add your task"
+                id="input-box"
+              />
+              <button class="btn btn-outline-secondary" type="button" onclick="addTask()">
+                Add
+              </button>
+            </div>
+          </div>
+          <div class="row p-3">
+            <ul id="list-container">
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
